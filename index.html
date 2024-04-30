@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="header">
+            <div class="header__navigation">
+                <img class="header__menu" src="./imagen/menu-bars.svg" alt="menu icon">
+                <img class="header__logo" src="./imagen/logoheader.svg" alt="logo">
+                <nav class="navbar">
+                    <ul class="navbar-items">
+                        <li><a class="navbar-link" href="#">Inicio</a></li>
+                        <li><a class="navbar-link" href="#">Productos</a></li>
+                        <li><a class="navbar-link" href="#">Nosotros</a></li>
+                        <li><a class="navbar-link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Inicio modal navbar-->
+            <div class="modal-navbar__background">
+                <nav class="modal-navbar">
+                    <img class="modal-navbar_close-icon" src="./imagen/close.svg" alt="close navbar">
+                    <ul class="modal-navbar__items">
+                        <li><a class="modal-navbar-link" href="#">Inicio</a></li>
+                        <li><a class="modal-navbar-link" href="#">Productos</a></li>
+                        <li><a class="modal-navbar-link" href="#">Nosotros</a></li>
+                        <li><a class="modal-navbar-link" href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Final modal navbar-->
+
+            <div class="header__cart-avatar">
+                <div class="header__cart">
+                    <div class="header__cart--notification">3</div>
+                    <img src="./imagen/shopping-cart.svg" alt="">
+                </div>
+                <img class="header__avatar" src="./imagen/avatar.svg" alt="">
+            </div>
+        </header>
+
+        <section class="content">
+            <article class="gallery">
+                <div class="gallery__image-container">
+                    <img class="gallery__previous" src="./imagen/previous.svg" alt="previous">
+                    <img class="gallery__next" src="./imagen/next.svg" alt="">
+                </div>
+                <div class="gallery__thumbnails">
+                    <img id="1" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="2" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="3" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="4" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                </div>
+            </article>
+
+            <article class="details">
+                <h2 class="details__company">Diseño de Sabores</h2>
+                <h2 class="details__tittle">Brownie de chocolate</h2>
+                <p class="details__description">Elaborado con ingredientes de la más alta calidad y horneado con amor y
+                    cuidado, nuestro brownie de chocolate es la elección perfecta para endulzar tus momentos especiales
+                    o simplemente para darte un capricho cuando necesites un poco de indulgencia.</p>
+                <div class="details__prices">
+                    <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+                    <p class="details__before">$250.00</p>
+                </div>
+                <div class="details__product-quantity">
+                    <div class="input">
+                        <img class="input__minus" src="./imagen/minus.svg" alt="minus">
+                        <input class="input__number" type="text" value="0">
+                        <img class="input__plus" src="./imagen/plus.svg" alt="plus">
+                    </div>
+                    <div class="details__product-button">
+                        <button class="details__button"><img src="./imagen/shopping-cart-white.svg"> Añadir al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Inicio cart modal-->
+        <div class="cart-modal">
+            <p class="cart-modal__title">Carrito</p>
+            <div class="cart-modal__checkout-container">
+                <div class="cart-modal__details-container">
+                    <img src="./imagen/brownie.jpg" alt="">
+                    <div>
+                        <p class="cart-modal__product">Brownie de chocolate</p>
+                        <p class="cart-modal__price">$125 x3 <span>$250.00</span></p>
+                    </div>
+                    <img class="cart-modal__delete" src="./imagen/trash-can.svg" alt="delete">
+                </div>
+                <button class="cart-modal__delete">Checkout</button>
+            </div>
+        </div>
+        <!-- Final cart modal-->
+
+        <!--Inicio gallery modal-->
+        <div class="modal-gallery__background">
+            <article class="modal-gallery">
+                <img class="modal-gallery__close" src="./imagen/close.svg" alt="icon-close">
+                <div class="modal-gallery__image-container">
+                    <img class="modal-gallery__previous" src="./imagen/previous.svg" alt="previous">
+                    <img class="modal-gallery__next" src="./imagen/next.svg" alt="">
+                </div>
+                <div class="modal-gallery__thumbnails">
+                    <img id="m1" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m2" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m3" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m4" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                </div>
+            </article>
+        </div>
+        <!--Fin gallery modal-->
+    </main>
+</body>
+
+</html>

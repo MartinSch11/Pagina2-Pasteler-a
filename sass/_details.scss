@@ -1,0 +1,61 @@
+@use 'variables';
+@use 'mixins';
+
+.details {
+    padding: 24px;
+    &__company {
+        color: variables.$rojo;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-size: 1.7em;
+        margin-bottom: 16px;
+    }
+
+    &__description {
+        font-size: 0.94em;
+        color: variables.$dark-gray;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+
+    &__now {
+        font-size: 1.6em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__discount {
+        font-size: 0.5em;
+        background-color: variables.$amarillo-palido;
+        color: variables.$amarillo-oscuro;
+        padding: 4px;
+        border: 4px;
+    }
+    &__before{
+        font-weight: 700;
+        color: variables.$dark-gray-claro;
+        text-decoration: line-through;
+    }
+    &__product-button{
+        display: flex;
+        justify-content: center;
+    }
+    &__button{
+        @include mixins.button;
+        margin-top: 10px;
+    }
+}

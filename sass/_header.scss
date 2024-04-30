@@ -1,0 +1,75 @@
+@use 'variables';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width: 1115px) {
+        height: 112px;
+        border-bottom: 1px solid variables.$gray-claro;
+    }
+    &__navigation{
+        width: 175px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 1115px) {
+            width: 590px;
+            
+        }
+    }
+    &__menu{
+        &:hover{
+            cursor: pointer;
+        }
+        @media (min-width: 1115px) {
+            display: none;
+        }
+    }
+    &__cart-avatar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70px;
+        @media (min-width: 1115px) {
+            width: 125px;
+        }
+    }
+    &__cart{
+        position: relative;
+           &--notification{
+            display: none; 
+            background-color: orange;
+            width: 20px;  
+            height: 20px;
+            border-radius: 16px;
+            position: absolute;
+            top: -2px;
+            right: -5px;
+            font-size: 0.6em;
+            text-align: center;
+            color: variables.$blanco;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__avatar{
+
+        @media (min-width: 1115px) {
+            width: 30px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid orange;
+            border-radius: 50%;
+        }
+    }
+}
+
+.header__logo {
+    border-radius: 50%;
+}
