@@ -5,6 +5,7 @@
     height: 40px;
     display: flex;
     justify-content: space-between;
+    background-color: variables.$gray-claro;
     &__minus{
         @include mixins.changeNumber(9px, 5px)
     }

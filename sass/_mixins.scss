@@ -29,7 +29,6 @@
 @mixin changeNumber($pv, $ph){
     width: 25px;
     height: 100%;
-    background-color: variables.$gray-claro;
     padding: $pv $ph;
     &:hover {
         cursor: pointer;
