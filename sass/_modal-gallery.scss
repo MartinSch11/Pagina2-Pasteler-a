@@ -1,0 +1,59 @@
+@use 'variables';
+@use 'mixins';
+
+.modal-gallery {
+    &__background {
+        @include mixins.modal-background;
+        display: none;
+        //display: grid;
+        place-content: center;
+    }
+
+    &__close-container {
+        text-align: right;
+        height: 30px;
+    }
+
+    &__close {
+        width: 16px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__image-container {
+        background-image: url(../imagen/brownie.jpg);
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        position: relative;
+    }
+
+    &__thumbnails {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+
+    &__thumbnail {
+        width: 90px;
+        border-radius: 16px;
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid variables.$amarillo;
+        }
+    }
+
+    &__previous {
+        @include mixins.image-btn(223px, -15px, true);
+    }
+
+    &__next {
+        @include mixins.image-btn(223px, 425px, true);
+    }
+
+}

@@ -119,16 +119,6 @@ body {
   padding: 28px 24px;
   display: none;
 }
-.modal-navbar__background {
-  background-color: hsla(0, 0%, 0%, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: none;
-}
 .modal-navbar__items {
   display: flex;
   flex-direction: column;
@@ -170,6 +160,11 @@ body {
 .gallery__previous:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__previous {
+    display: none;
+  }
+}
 .gallery__next {
   background-color: #ffffff;
   width: 40px;
@@ -183,12 +178,37 @@ body {
 .gallery__next:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__next {
+    display: none;
+  }
+}
 .gallery__thumbnails {
   display: none;
 }
 @media (min-width: 1115px) {
   .gallery__thumbnails {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.gallery__thumbnail {
+  width: 90px;
+  border-radius: 16px;
+}
+.gallery__thumbnail:hover {
+  cursor: pointer;
+  border: 2px solid #F4F1BB;
+}
+@media (min-width: 1115px) {
+  .gallery {
+    width: 446px;
+  }
+  .gallery__image-container {
+    background-position-y: 0;
+    border-radius: 16px;
+    height: 446px;
+    margin-bottom: 32px;
   }
 }
 
@@ -237,13 +257,9 @@ body {
   color: #a0a0a0;
   text-decoration: line-through;
 }
-.details__product-button {
-  display: flex;
-  justify-content: center;
-}
 .details__button {
   background-color: #CD1110;
-  width: 80%;
+  width: 100%;
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -253,12 +269,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
   margin-top: 10px;
 }
 .details__button:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+@media (min-width: 1115px) {
+  .details__button {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1115px) {
+  .details {
+    width: 446px;
+    padding-top: 60px;
+  }
+  .details__title {
+    font-size: 2.7em;
+    margin-bottom: 48px;
+  }
+  .details__description {
+    font-size: 0.9em;
+    margin-bottom: 37px;
+  }
+  .details__prices {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .details__product-quantity {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 }
 
 .input {
@@ -331,13 +375,9 @@ body {
 .cart-modal__delete:hover {
   cursor: pointer;
 }
-.cart-modal__checkoutbutton-container {
-  display: flex;
-  justify-content: center;
-}
 .cart-modal__checkout {
   background-color: #CD1110;
-  width: 80%;
+  width: 100%;
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -347,11 +387,92 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
 }
 .cart-modal__checkout:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.modal-gallery__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  place-content: center;
+}
+.modal-gallery__close-container {
+  text-align: right;
+  height: 30px;
+}
+.modal-gallery__close {
+  width: 16px;
+}
+.modal-gallery__close:hover {
+  cursor: pointer;
+}
+.modal-gallery__image-container {
+  background-image: url(../imagen/brownie.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.modal-gallery__thumbnails {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin: auto;
+}
+.modal-gallery__thumbnail {
+  width: 90px;
+  border-radius: 16px;
+}
+.modal-gallery__thumbnail:hover {
+  cursor: pointer;
+  border: 2px solid #F4F1BB;
+}
+.modal-gallery__previous {
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 223px;
+  left: -15px;
+}
+.modal-gallery__previous:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .modal-gallery__previous {
+    display: block;
+  }
+}
+.modal-gallery__next {
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 223px;
+  left: 425px;
+}
+.modal-gallery__next:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .modal-gallery__next {
+    display: block;
+  }
 }
 
 .main-container {
@@ -363,6 +484,14 @@ body {
 @media (min-width: 1115px) {
   .main-container {
     width: 1115px;
+  }
+}
+
+@media (min-width: 1115px) {
+  .content {
+    display: flex;
+    padding: 90px 50px;
+    gap: 124px;
   }
 }
 

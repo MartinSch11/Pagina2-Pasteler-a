@@ -43,11 +43,8 @@
     &__delete:hover {
         cursor: pointer;
     }
-    &__checkoutbutton-container{
-        display: flex;
-        justify-content: center
-    }
-    &__checkout{
+
+    &__checkout {
         @include mixins.button;
     }
 }

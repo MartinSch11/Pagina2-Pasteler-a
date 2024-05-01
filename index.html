@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diseño de Sabores</title>
     <link rel="stylesheet" href="./main.css">
-
+    <link rel="stylesheet" href="./imagen/logo.ico">
 </head>
 
 <body>
@@ -55,10 +55,10 @@
                     <img class="gallery__next" src="./imagen/next.svg" alt="">
                 </div>
                 <div class="gallery__thumbnails">
-                    <img id="1" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="2" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="3" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="4" class="gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="1" class="gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="2" class="gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="3" class="gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="4" class="gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
                 </div>
             </article>
 
@@ -78,10 +78,8 @@
                         <input class="input__number" type="text" value="0">
                         <img class="input__plus" src="./imagen/plus.svg" alt="plus">
                     </div>
-                    <div class="details__product-button">
-                        <button class="details__button"><img src="./imagen/shopping-cart-white.svg"> Añadir al
-                            carrito</button>
-                    </div>
+                    <button class="details__button"><img src="./imagen/shopping-cart-white.svg"> Añadir al
+                        carrito</button>
                 </div>
             </article>
         </section>
@@ -98,7 +96,7 @@
                     </div>
                     <img class="cart-modal__delete" src="./imagen/trash-can.svg" alt="delete">
                 </div>
-                <div class="cart-modal__checkoutbutton-container">
+                <div class="cart-modal__container">
                     <button class="cart-modal__checkout">Confirmar compra</button>
                 </div>
             </div>
@@ -108,16 +106,18 @@
         <!--Inicio gallery modal-->
         <div class="modal-gallery__background">
             <article class="modal-gallery">
-                <img class="modal-gallery__close" src="./imagen/close.svg" alt="icon-close">
+                <div class="modal-gallery__close-container">
+                    <img class="modal-gallery__close" src="./imagen/close-white.svg" alt="icon-close">
+                </div>
                 <div class="modal-gallery__image-container">
                     <img class="modal-gallery__previous" src="./imagen/previous.svg" alt="previous">
                     <img class="modal-gallery__next" src="./imagen/next.svg" alt="">
                 </div>
                 <div class="modal-gallery__thumbnails">
-                    <img id="m1" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="m2" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="m3" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
-                    <img id="m4" class="modal-gallery__thumbnails" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m1" class="modal-gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m2" class="modal-gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m3" class="modal-gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
+                    <img id="m4" class="modal-gallery__thumbnail" src="./imagen/brownie.jpg" alt="thumbnails">
                 </div>
             </article>
         </div>
