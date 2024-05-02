@@ -56,7 +56,8 @@
     &__button {
         @include mixins.button;
         margin-top: 10px;
-        @media(min-width: 1115px){
+
+        @media(min-width: 1115px) {
             margin-top: 0px;
         }
     }
@@ -75,11 +76,12 @@
             margin-bottom: 37px;
         }
 
-        &__prices{
+        &__prices {
             flex-direction: column;
             align-items: flex-start;
         }
-        &__product-quantity{
+
+        &__product-quantity {
             display: flex;
             justify-content: center;
             gap: 32px;

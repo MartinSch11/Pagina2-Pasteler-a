@@ -1,24 +1,28 @@
 @use 'variables';
 
-.navbar{
+.navbar {
     display: none;
     width: 400px;
-    &-items{
+
+    &-items {
         list-style: none;
         display: flex;
         justify-content: space-between;
     }
-    &-link{
+
+    &-link {
         text-decoration: none;
         color: variables.$negro;
         display: block;
         height: 112px;
         padding-top: 42px;
-        &:hover{
+
+        &:hover {
             border-bottom: 4px solid variables.$rojo;
         }
     }
-    @media (min-width: 1115px){
+
+    @media (min-width: 1115px) {
         display: block;
     }
 }

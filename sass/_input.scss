@@ -1,15 +1,17 @@
 @use 'variables';
 @use 'mixins';
 
-.input{
+.input {
     height: 40px;
     display: flex;
     justify-content: space-between;
     background-color: variables.$gray-claro;
-    &__minus{
+
+    &__minus {
         @include mixins.changeNumber(9px, 5px)
     }
-    &__number{
+
+    &__number {
         width: 100%;
         border: none;
         background-color: variables.$gray-claro;
@@ -19,7 +21,8 @@
         text-align: center;
         outline: none;
     }
-    &__plus{
+
+    &__plus {
         @include mixins.changeNumber(9px, 5px)
     }
 }

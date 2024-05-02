@@ -58,9 +58,9 @@ body {
 }
 .header__cart--notification {
   display: none;
-  background-color: orange;
-  width: 20px;
-  height: 20px;
+  background-color: #CD1110;
+  width: 15px;
+  height: 12px;
   border-radius: 16px;
   position: absolute;
   top: -2px;
@@ -477,7 +477,6 @@ body {
 
 .main-container {
   width: 375px;
-  border: 1px solid black;
   margin: auto;
   position: relative;
 }
@@ -493,6 +492,17 @@ body {
     padding: 90px 50px;
     gap: 124px;
   }
+}
+
+.show {
+  display: block;
+}
+
+.cart-empty {
+  text-align: center;
+  color: #3b3b3b;
+  margin-top: 30px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */
